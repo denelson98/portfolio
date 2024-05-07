@@ -4,8 +4,8 @@
 }
 
 :root {
-    --title-size: 5vw;
-    --header-nav-size: 3vw;
+    --title-size: 5vw; /* add clamp() */
+    --header-nav-size: 3vw; /* add clamp() */
 }
 
 body {
@@ -53,9 +53,17 @@ header {
     background-color: #642cde;
     display: flex;
     justify-content: center;
-    align-items: center;
     grid-row: 2 / 4;
     grid-column: 2 / 3;
+}
+
+.project-container {
+    display: grid;
+    grid-template-areas: repeat(1fr, 2) / repeat(1fr, 2);
+}
+
+.project-container > * {
+    /* revisit card css-excercise under grid */
 }
 
 footer {
