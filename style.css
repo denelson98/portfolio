@@ -3,9 +3,22 @@
     padding: 0px;
 }
 
+:root {
+    --title-size: 5vw;
+    --header-nav-size: 3vw;
+}
+
+body {
+    height: 200vh;
+    background-color: white;
+    display: grid;
+    grid-template: 150px 1fr 5fr 75px / 3fr 0.5fr;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav,
@@ -17,4 +30,39 @@
 .nav-container {
     display: flex;
     flex-direction: column;
+}
+
+header {
+    background-color: #053fbc;
+    color: white;
+    display: grid;
+    grid-column: 1 / 3;
+    align-items: center;
+    padding: 32px
+}
+
+.name {
+    font-size: var(--title-size);
+}
+
+.header-nav {
+    font-size: var(--header-nav-size);
+}
+
+.sidebar-nav {
+    background-color: #642cde;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+}
+
+footer {
+    background-color: #393f4d;
+    color: #ffffff;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
 }
