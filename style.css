@@ -53,8 +53,16 @@ header {
     background-color: #642cde;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     grid-row: 2 / 4;
     grid-column: 2 / 3;
+}
+
+.nav-container {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding-top: 52px;
 }
 
 .project-container {
