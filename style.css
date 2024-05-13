@@ -19,9 +19,14 @@ body {
 }
 
 #about-section,
-.tech-section, 
 #portfolio-section {
     font-size: var(--para-size);
+}
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .header-container {
